@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Hanken+Grotesk:wght@400;500;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Rubik:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+@media (max-width: 1114px) {
+    .container{
+      width: 97%;
+  }
+    .grid-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px
+  }
+    .country-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+    .detail-content{
+      width: 100%;
+      font-display: auto;
+  }
+    .detail-img{
+      width: 100%;
+  }
+
+}
+
+@media (max-width:625px) {
+    .form{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex-wrap: wrap;
+      margin-left: 10px;
+      background-color: inherit;
+  }
+    select{
+      margin-top: -25px;
+      margin-bottom: 15px;
+    }
+    select option{
+      font-size: 11px;
+      font-weight: 600;
+  }
+    .nav h3{
+      font-size: 18px;
+  }
+
+    .back-btn{
+     margin-top: 0px;
+  }
+    .grid-content span {
+      margin-right: 12px;
+  }
+  .detail-content h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  .contents{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+    .detail-content p {
+      font-size: 13px;
+  }
+    .detail-content > div{
+      width: 100%;
+    }
+    .detail-content p span{
+      margin-left: 12px;
+  }
+
+}
