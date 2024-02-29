@@ -39,7 +39,7 @@ function Countries() {
         </form>
         <div className="grid-container">
           {countries.map((item) => (
-            <Link to={`/country/${item.name}`}  key={item.population + Math.random()} style={{ textDecoration:'none' }}>
+            <Link to={`/${item.name}`}  key={item.population + Math.random()} style={{ textDecoration:'none' }}>
               <div className={`grid-items-card ${darkMode ? "darker" : "lighter"}`}>
                 <img src={item.flags.png}/>
                 <div className="grid-content">

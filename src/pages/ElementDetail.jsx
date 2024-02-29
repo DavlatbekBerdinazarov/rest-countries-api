@@ -21,7 +21,7 @@ function ElementDetail() {
     const borderCountry = data.find((item) => item.name === borderCountryName);
     if (borderCountry && borderCountry.borders && Array.isArray(borderCountry.borders)) {
       // Check if borders exist and is an array
-      navigate(`/country/${borderCountry.name}`);
+      navigate(`/${borderCountry.name}`);
     } 
     
   };
@@ -91,7 +91,7 @@ function ElementDetail() {
                         {item.borders.map((borderCountryCode) => {
                           const borderCountry = data.find((item) => item.alpha3Code === borderCountryCode);
                           return (
-                            <Link to={`/country/${borderCountry.name}`} className="border-countries" key={borderCountryCode}>
+                            <Link to={`/${borderCountry.name}`} className="border-countries" key={borderCountryCode}>
                               <button className="border-btn" onClick={() => handleBorderCountryClick(borderCountryCode)}>
                                 {borderCountry ? borderCountry.translations.br : borderCountryCode}
                               </button>

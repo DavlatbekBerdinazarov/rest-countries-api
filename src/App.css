@@ -91,6 +91,10 @@ input::placeholder{
     font-size: 17px;
 }
 
+input:focus{
+    outline: none;
+}
+
 select{
     width: 150px;
     background-color: white;
